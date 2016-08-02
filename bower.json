@@ -1,5 +1,5 @@
-/* Bower - Web package manager */
 {
+  "//": "Bower - Web package manage",
   "name": "topFiveWorldNews",
   "description": "top five world news",
   "main": "public/index.html",
