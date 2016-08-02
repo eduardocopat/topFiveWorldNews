@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="topFive" ng-controller="topFiveController">
+<head>
+    <!-- Twitter bootstrap -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Angular -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="angular_app.js"></script>
+    <!-- Twitter bootstrap -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+        <h1>
+            Top 5 world news <span class="glyphicon glyphicon-globe"></span></h1>
+    <p>Reddit world news, condensed</p>
+</div>
+
+
+<div class="container" style="background-color:'#fafafa'">
+    <div ng-repeat="news in newsSet">
+        <ng-include src="'news_template.html'"></ng-include>
+    </div>
+</div>
+
+<!-- Twitter bootstrap -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
