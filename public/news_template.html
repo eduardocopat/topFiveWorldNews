@@ -1,18 +1,25 @@
 <div class="panel panel-default">
     <div class="panel-heading ">
         <div class="panel-title">
-            <h2 style="display:inline">#{{news.rank}} <small><a href={{news.link}}>{{news.title}}</a></small></h2>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <a href="#" class="btn btn-warning btn-lg disabled" role="button">#{{news.rank}} </a>
+                </div>
+                <div class="col-md-3">
+                    <div style="text-align:center"> <img src="http://placehold.it/400x400" class="img-rounded img-responsive"></div>
+                </div>
+                <div class="col-md-8">
+                    <h2><strong>{{news.title}}</strong></h2>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="panel-body">
-        <div class="row">
-            <div class="col-md-4" style="max-width: 400px;max-height: 400px">
-                <div style="text-align:center"> <img src="http://placehold.it/400x400" class="img-rounded img-responsive"></div>
-            </div>
-            <div style="white-space:pre-line;" class="col-md-8">
+            <div style="white-space:pre-line;">
                 {{news.summary}}
             </div>
-        </div>
     </div>
 </div>
 

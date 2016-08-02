@@ -13,17 +13,21 @@
     <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
 </head>
-<body>
+<body style="background: url(earth-space.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; background-color:black;" >
 
-<div class="jumbotron text-center">
-        <h1>
+<div class="jumbotron text-center" style="background:none" >
+        <h1 style="color:white;text-shadow: 1px 1px #000000;">
             Top 5 world news <span class="glyphicon glyphicon-globe"></span></h1>
-    <p>Reddit world news, condensed</p>
+    <p style="color:white;text-shadow: 1px 1px #000000;">Reddit world news, pocket</p>
 </div>
 
 
-<div class="container" style="background-color:'#fafafa'">
-    <div ng-repeat="news in newsSet">
+<div class="container" >
+    <div ng-repeat="news in newsSet | orderBy:'+rank'">
         <ng-include src="'news_template.html'"></ng-include>
     </div>
 </div>

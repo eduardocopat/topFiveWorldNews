@@ -28,9 +28,21 @@ app.controller('topFiveController', function($scope) {
     $scope.newsSet.push(news);
     $scope.newsSet.push(news2);
 
+     var news3 = angular.copy(news);
+    news3.rank = 3;
+    $scope.newsSet.push(news3);
+
+    var news4 = angular.copy(news);
+    news4.rank = 4;
+    $scope.newsSet.push(news4);
+
+    var news5 = angular.copy(news);
+    news5.rank = 5;
+    $scope.newsSet.push(news5);
 
     $scope.createTitle = function(news){
         return "#" +  news.rank + " " + news.title;
     }
 });
+
 
