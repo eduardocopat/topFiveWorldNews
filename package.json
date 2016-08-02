@@ -8,8 +8,9 @@
     "postinstall": "npm install -g bower && bower install"
   },
   "dependencies": {
+    "bower": "1.7.9",
     "debug": "~2.2.0",
     "express": "~4.13.4",
-    "bower": "1.7.9"
+    "snoocore": "^3.3.1"
   }
 }
