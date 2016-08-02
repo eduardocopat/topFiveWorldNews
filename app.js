@@ -12,6 +12,10 @@ app.get('/topnews', function (request, response) {
   response.send('Hello World!');
 });
 
-app.listen(3000, function () {
-  console.log('App started. Listening on port 3000.');
+//To avoid Heroku $PORT error
+app.get('/', function(request, response) {
+  var result = 'App is running'
+  response.send(result);
+}).listen(app.get('port'), function() {
+  console.log('App is running, server is listening on port ', app.get('port'));
 });
