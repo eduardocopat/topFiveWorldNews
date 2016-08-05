@@ -47,4 +47,6 @@ Temporary Items
 .apdisk
 node_modules
 bower_components
-foo/bar.txt
+
+# Your personal and private reddit api keys
+config/reddit_api_developer.config
