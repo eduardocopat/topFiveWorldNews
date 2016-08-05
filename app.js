@@ -63,9 +63,9 @@ app.get('/topnews', function (request, response) {
     reddit('/r/worldnews/hot').listing({
         limit: 5
     }).then(function (result) {
-            result.children.forEach(function (post, rank) {
+            rank = 1;
+            result.children.forEach(function (post) {
                 console.log(post);
-
                 var news = {
                     rank: rank,
                     title: post.data.title,
@@ -73,6 +73,7 @@ app.get('/topnews', function (request, response) {
                     url: post.data.url
                 };
                 newsSet.push(news);
+                rank++;
             });
         response.send(newsSet);
     });
