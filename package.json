@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./source/app.js",
+    "start": "node ./app.js",
     "postinstall": "npm install -g bower && bower install"
   },
   "dependencies": {
