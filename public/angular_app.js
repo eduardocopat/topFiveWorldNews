@@ -4,9 +4,9 @@ app.controller('topFiveController', function($scope, $http) {
 
     $http.get("/topnews")
         .then(function(response) {
-            $scope.newsSet = response.data;
+            console.log(response.data);
         });
-/*
+
     var news = {
         rank: 1,
         title:'Scientists caught off-guard by record temperatures linked to climate change. "We predicted moderate warmth for 2016, but nothing like the temperature rises we' + "'" + "ve seen",
@@ -44,7 +44,9 @@ app.controller('topFiveController', function($scope, $http) {
     news5.rank = 5;
     $scope.newsSet.push(news5);
 
-*/
+    $scope.createTitle = function(news){
+        return "#" +  news.rank + " " + news.title;
+    }
 });
 
 

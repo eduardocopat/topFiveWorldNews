@@ -4,14 +4,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./source/app.js",
+    "start": "node ./app.js",
     "postinstall": "npm install -g bower && bower install"
   },
   "dependencies": {
     "bower": "1.7.9",
     "debug": "~2.2.0",
     "express": "~4.13.4",
-    "fs": "0.0.2",
     "path": "^0.12.7",
     "serve-favicon": "^2.3.0",
     "snoocore": "^3.3.1"
