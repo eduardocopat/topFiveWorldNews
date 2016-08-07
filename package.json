@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./app.js",
-    "postinstall": "npm install -g bower && bower install"
+    "postinstall": "npm install -g bower && bower install",
+    "test": "mocha"
   },
   "dependencies": {
     "bower": "1.7.9",
