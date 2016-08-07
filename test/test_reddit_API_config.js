@@ -33,5 +33,9 @@ describe('Reddit API Config', function () {
                 done();
             });
         });
+
+        it('should fail hard', function () {
+            assert.equal(1,2);
+        });
     });
 });

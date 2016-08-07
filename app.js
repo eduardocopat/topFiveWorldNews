@@ -1,20 +1,17 @@
 var express = require('express');
 var favicon = require('serve-favicon');
 var path = require('path');
-var fileSystem = require('fs');
 
 var redditAPIConfig = require('./source/reddit_api_config.js');
 
 var app = express();
 
 app.set('port', (process.env.PORT || 3000));
-
 app.use(express.static(__dirname + '/public'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 var Snoocore = require('snoocore');
-
 
 var reddit;
 var makeRedditAPI = function (APIconfig) {
