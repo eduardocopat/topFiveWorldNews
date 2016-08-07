@@ -16,20 +16,20 @@ Rename the file
 
 >config/reddit_api_developer_example.config
 
-to
+to:
 
 >config/reddit_api_developer.config
 
-Insert your reddit app configs into this file
+Insert your reddit app configs into this file.
 
-Run
+Run:
 
 > npm install
 
-Run tests with
+Run tests with:
 
 > npm test
 
-Run app with
+Run app with:
 
 > node app.js

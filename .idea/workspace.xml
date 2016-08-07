@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488c15c7-033d-4abf-b3af-969dabc0f9ee" name="Default" comment="Enable Heroku Config Variables Read">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/reddit_api_developer_example.config" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="topFiveWorldNews.iws" />
@@ -52,8 +50,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="340">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -331,7 +329,7 @@
       <workItem from="1470271855055" duration="1194000" />
       <workItem from="1470276249417" duration="129000" />
       <workItem from="1470364514009" duration="1417000" />
-      <workItem from="1470530676328" duration="9085000" />
+      <workItem from="1470530676328" duration="9197000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing package.json and adding README">
       <created>1470099872192</created>
@@ -404,7 +402,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43134000" />
+    <option name="totallyTimeSpent" value="43246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -847,8 +845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="340">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding />
         </state>
       </provider>
