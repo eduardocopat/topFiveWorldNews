@@ -3,7 +3,7 @@ var favicon = require('serve-favicon');
 var path = require('path');
 var fileSystem = require('fs');
 
-var redditAPIConfig = require('source/reddit_api_config.js');
+var redditAPIConfig = require('./source/reddit_api_config.js');
 
 var app = express();
 
