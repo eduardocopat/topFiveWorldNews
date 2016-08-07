@@ -3,40 +3,7 @@ var favicon = require('serve-favicon');
 var path = require('path');
 var fileSystem = require('fs');
 
-/*
- var aCallBack = function(foobar) {
- console.log(foobar);
- };
- */
-
-var readRedditAPIConfig = function (result) {
-    var redditApiConfig = {
-        userAgent: 'topFiveWorldNews',
-        oauth: {
-            type: 'script',
-            scope: ['read']
-        }
-    };
-
-    fileSystem.readFile('./config/reddit_api_developer.config', 'utf8', function (error, redditApiDeveloperConfigRawFile) {
-        if (error) {
-            redditApiConfig.oauth.key = process.env.REDDIT_KEY;
-            redditApiConfig.oauth.secret = process.env.REDDIT_SECRET;
-            redditApiConfig.oauth.username = process.env.REDDIT_USERNAME;
-            redditApiConfig.oauth.password = process.env.REDDIT_PASSWORD;
-        }
-        else {
-            var redditApiDeveloperConfig = JSON.parse(redditApiDeveloperConfigRawFile);
-
-            redditApiConfig.oauth.key = redditApiDeveloperConfig.key;
-            redditApiConfig.oauth.secret = redditApiDeveloperConfig.secret;
-            redditApiConfig.oauth.username = redditApiDeveloperConfig.username;
-            redditApiConfig.oauth.password = redditApiDeveloperConfig.password;
-        }
-        result(redditApiConfig);
-    });
-};
-
+var redditAPIConfig = require('source/reddit_api_config.js');
 
 var app = express();
 
@@ -54,8 +21,7 @@ var makeRedditAPI = function (APIconfig) {
     reddit = new Snoocore(APIconfig);
 };
 
-readRedditAPIConfig(makeRedditAPI);
-
+redditAPIConfig.define(makeRedditAPI);
 
 app.get('/topnews', function (request, response) {
     var newsSet = [];
