@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="488c15c7-033d-4abf-b3af-969dabc0f9ee" name="Default" comment="Testing world news query">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/top_five_world_news_factory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_top_five_world_news_factory.js" />
+    <list default="true" id="488c15c7-033d-4abf-b3af-969dabc0f9ee" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/reddit_api_config.js" afterPath="$PROJECT_DIR$/source/reddit_api_config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_reddit_API_config.js" afterPath="$PROJECT_DIR$/test/test_reddit_API_config.js" />
     </list>
     <ignored path="topFiveWorldNews.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +50,8 @@
       <file leaf-file-name="test_top_five_world_news_factory.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_top_five_world_news_factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="370">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -301,7 +296,7 @@
       <workItem from="1470364514009" duration="1417000" />
       <workItem from="1470530676328" duration="12376000" />
       <workItem from="1470578534596" duration="64000" />
-      <workItem from="1470662862742" duration="119000" />
+      <workItem from="1470662862742" duration="206000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing package.json and adding README">
       <created>1470099872192</created>
@@ -338,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470365642524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Testing world news query">
+      <created>1470662987670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1470662987670</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -374,7 +376,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46608000" />
+    <option name="totallyTimeSpent" value="46695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -786,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_top_five_world_news_factory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="370">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
