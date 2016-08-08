@@ -2,7 +2,7 @@ var assert = require('chai').assert;
 var redditAPIConfig = require('../source/reddit_api_config.js');
 
 describe('Reddit API Config', function () {
-    describe('when defining reddit API connectivity configuration)', function () {
+    describe('when defining reddit API connectivity configuration', function () {
         it('should contain this app userAgent', function (done) {
             redditAPIConfig.define(function (config) {
                 assert.equal(config.userAgent, 'topFiveWorldNews');
@@ -32,10 +32,6 @@ describe('Reddit API Config', function () {
                 assert.isDefined(config.oauth.password);
                 done();
             });
-        });
-
-        it('should fail hard', function () {
-            assert.equal(1,2);
         });
     });
 });

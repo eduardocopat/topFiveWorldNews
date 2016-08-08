@@ -45,8 +45,7 @@ app.get('/topnews', function (request, response) {
 
 //To avoid Heroku $PORT error
 app.get('/', function (request, response) {
-    var result = 'App is running';
-    response.send(result);
+    response.send('App is running');
 }).listen(app.get('port'), function () {
     console.log('App is running, server is listening on port ', app.get('port'));
 });
