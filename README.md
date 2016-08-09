@@ -2,7 +2,7 @@
 
 # Top 5 World news
 
-List and summarizes top 5 world news form reddit
+List and summarizes top 5 world news from reddit
 
 http://topfiveworldnews.herokuapp.com
 
