@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488c15c7-033d-4abf-b3af-969dabc0f9ee" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/reddit_api_developer_example.config" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/top_five_world_news_factory.js" afterPath="$PROJECT_DIR$/source/top_five_world_news_factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_reddit_API_config.js" afterPath="$PROJECT_DIR$/test/test_reddit_API_config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_top_five_world_news_factory.js" afterPath="$PROJECT_DIR$/test/test_top_five_world_news_factory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/angular_app.js" afterPath="$PROJECT_DIR$/public/angular_app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/news_template.html" afterPath="$PROJECT_DIR$/public/news_template.html" />
     </list>
     <ignored path="topFiveWorldNews.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,12 +39,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular_app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/angular_app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news_template.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/news_template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding>
+                <marker date="1470707843110" expanded="false" signature="392:409" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,9 +99,7 @@
       <list>
         <option value="$PROJECT_DIR$/public/todo.js" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/public/news_template.html" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/angular_app.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/config/reddit_api_developer_example.config" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -95,6 +111,8 @@
         <option value="$PROJECT_DIR$/source/top_five_world_news_factory.js" />
         <option value="$PROJECT_DIR$/test/test_top_five_world_news_factory.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/angular_app.js" />
+        <option value="$PROJECT_DIR$/public/news_template.html" />
       </list>
     </option>
   </component>
@@ -180,6 +198,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topFiveWorldNews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topFiveWorldNews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,7 +367,7 @@
       <workItem from="1470530676328" duration="12376000" />
       <workItem from="1470578534596" duration="64000" />
       <workItem from="1470662862742" duration="206000" />
-      <workItem from="1470702389164" duration="5355000" />
+      <workItem from="1470702389164" duration="5501000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing package.json and adding README">
       <created>1470099872192</created>
@@ -415,10 +447,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52050000" />
+    <option name="totallyTimeSpent" value="52196000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -753,20 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/news_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -851,6 +869,24 @@
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/angular_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/news_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <marker date="1470707843110" expanded="false" signature="392:409" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
