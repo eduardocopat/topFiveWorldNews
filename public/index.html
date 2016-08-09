@@ -11,7 +11,8 @@
     <script src="/bower_components/angular/angular.js"></script>
     <script src="angular_app.js"></script>
     <!-- Twitter bootstrap -->
-    <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
 
 </head>
 <body style="background: url(earth-space.jpg) no-repeat center center fixed;
@@ -24,10 +25,11 @@
         <h1 style="color:white;text-shadow: 1px 1px #000000;">
             Top 5 world news <span class="glyphicon glyphicon-globe"></span></h1>
     <p style="color:white;text-shadow: 1px 1px #000000;">Reddit world news, digest</p>
+
 </div>
 
-
 <div class="container" >
+    <center><i class="spinner fa fa-spinner fa-spin" style="font-size:48px;color:white" ng-show="loading"></i></center>
     <div ng-repeat="news in newsSet | orderBy:'+rank'">
         <ng-include src="'news_template.html'"></ng-include>
     </div>
