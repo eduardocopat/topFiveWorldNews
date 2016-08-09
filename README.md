@@ -4,6 +4,8 @@
 
 List and summarizes top 5 world news form reddit
 
+http://topfiveworldnews.herokuapp.com
+
 # Installation
 
 Install node.js (https://nodejs.org/en/download/), if not installed yet.

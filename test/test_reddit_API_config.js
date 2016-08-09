@@ -1,35 +1,38 @@
-var assert = require('chai').assert;
+var expect = require('chai').expect;
+
 var redditAPIConfig = require('../source/reddit_api_config.js');
+
+
 
 describe('Reddit API Config', function () {
     describe('when defining reddit API connectivity configuration', function () {
         it('should contain this app userAgent', function (done) {
             redditAPIConfig.define(function (config) {
-                assert.equal(config.userAgent, 'topFiveWorldNews');
+                expect(config.userAgent).to.equal('topFiveWorldNews');
                 done();
             });
         });
 
         it('should have the oauth type as script', function (done) {
             redditAPIConfig.define(function (config) {
-                assert.equal(config.oauth.type, 'script');
+                expect(config.oauth.type).to.equal('script');
                 done();
             });
         });
 
         it('should have the oauth scope as read', function (done) {
             redditAPIConfig.define(function (config) {
-                assert.deepEqual(config.oauth.scope, ['read']);
+                expect(config.oauth.scope).to.deep.equal(['read']);
                 done();
             });
         });
 
         it('should contain private reddit API keys', function (done) {
             redditAPIConfig.define(function (config) {
-                assert.isDefined(config.oauth.key);
-                assert.isDefined(config.oauth.secret);
-                assert.isDefined(config.oauth.username);
-                assert.isDefined(config.oauth.password);
+                expect(config.oauth.key).to.not.be.undefined;
+                expect(config.oauth.secret).to.not.be.undefined;
+                expect(config.oauth.username).to.not.be.undefined;
+                expect(config.oauth.password).to.not.be.undefined;
                 done();
             });
         });
