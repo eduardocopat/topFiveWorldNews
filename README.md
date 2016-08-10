@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/EduardoCopat/topFiveWorldNews.svg?branch=master)](https://travis-ci.org/EduardoCopat/topFiveWorldNews)
+[![Code Climate](https://codeclimate.com/github/EduardoCopat/topFiveWorldNews/badges/gpa.svg)](https://codeclimate.com/github/EduardoCopat/topFiveWorldNews)
 
 # Top 5 World news
 

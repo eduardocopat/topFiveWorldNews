@@ -50,3 +50,6 @@ bower_components
 
 # Your personal and private reddit api keys
 config/reddit_api_developer.config
+
+#Coverage from Istanbul
+coverage/*
