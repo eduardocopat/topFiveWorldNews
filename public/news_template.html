@@ -12,7 +12,7 @@
                 </div>
                 -->
                 <div class="col-md-11">
-                    <h2><strong>{{news.title}}</strong></h2>
+                    <h2><strong>{{news.title}}</strong> <small>({{news.source}})</small></h2>
                 </div>
             </div>
 
@@ -21,8 +21,15 @@
     </div>
     <div class="panel-body">
             <div style="white-space:pre-line;">
-                {{news.summary}}
+                <strong>Summary: </strong>{{news.summary}}
             </div>
+    </div>
+    <div class="panel-footer">
+        <a href="{{news.url}}"><i class="glyphicon glyphicon-link"></i> Source</a> |
+        <a href="{{news.permalink}}"><i class="fa fa-reddit-alien"></i> Reddit ({{news.number_of_reddit_comments}} comments)</a> |
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{news.url}}" target="_blank">  <i class="fa fa-facebook-f"></i> Share on Facebook
+
+        </a>
     </div>
 </div>
 

@@ -1,9 +1,12 @@
 var express = require('express');
 var favicon = require('serve-favicon');
 var path = require('path');
+var summarizer = require('node-sumuparticles');
 
 var redditAPIConfig = require('./source/reddit_api_config');
-var topFiveWorldNewsFactory  = require('./source/top_five_world_news_factory');
+var topFiveWorldNewsBuilder  = require('./source/top_five_world_news_builder');
+var worldNewsFactory = require('./source/world_news_factory');
+
 
 var app = express();
 setUpApp(app);
@@ -17,7 +20,7 @@ var makeRedditAPI = function (APIconfig) {
 redditAPIConfig.define(makeRedditAPI);
 
 app.get('/topnews', function (request, response) {
-    topFiveWorldNewsFactory.make(reddit, function(newsSet) {
+    topFiveWorldNewsBuilder.build(reddit, summarizer, worldNewsFactory, function(newsSet) {
        response.send(newsSet);
     });
 });
