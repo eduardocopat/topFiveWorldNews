@@ -41,18 +41,6 @@ describe('Top Five World News Builder', function () {
                 done();
             });
         });
-        it('it should contains be ordered with rank', function (done) {
-            var mockRedditAPI = createMockRedditAPI();
-
-            topFiveWorldNewsBuilder.build(mockRedditAPI, dummySummarizer, dummyWorldNewsFactory, function (actualNewsSet) {
-                expect(actualNewsSet[0].rank).to.equal(1);
-                expect(actualNewsSet[1].rank).to.equal(2);
-                expect(actualNewsSet[2].rank).to.equal(3);
-                expect(actualNewsSet[3].rank).to.equal(4);
-                expect(actualNewsSet[4].rank).to.equal(5);
-                done();
-            });
-        });
     });
 });
 

@@ -45,6 +45,13 @@ describe('World News Factory', function () {
                 done();
             });
         });
+        it('should contain the score', function (done) {
+            var redditPost = {score: 6000};
+            worldNewsFactory.make(redditPost, mockSummarizer, function (news) {
+                expect(news.score).to.equal(redditPost.score);
+                done();
+            });
+        });
     });
 
 

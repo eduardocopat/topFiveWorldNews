@@ -2,6 +2,7 @@ function make(redditPost, summarizer, made){
     var news = {};
     news.title = redditPost.title;
     news.url = redditPost.url;
+    news.score = redditPost.score;
     news.permalink = "http://www.reddit.com" + redditPost.permalink;
     news.number_of_reddit_comments = redditPost.num_comments;
     summarizer.summarize(news.url, function(title, summary, failure){
